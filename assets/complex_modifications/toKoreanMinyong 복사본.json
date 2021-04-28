@@ -1,0 +1,38 @@
+{
+    "title": "For Korean PC Keyboard BackUp(minyong)",
+    "rules": [
+        {
+            "description": "to Korean mode",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "select_input_source":
+                            {
+                                "language": "^en$"
+                            }
+                        },
+                        {
+                            "key_code":"f18"
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "select_input_source":
+                            {
+                                "language": "^ko$"
+                            }
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

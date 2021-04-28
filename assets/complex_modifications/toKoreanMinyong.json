@@ -1,0 +1,49 @@
+{
+    "title": "For Korean PC Keyboard (by Kim MinYong)",
+    "rules": [
+        {
+            "description": "to Korean mode",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "input_sources": [
+                                {
+                                    "input_source_id": "^com\\.apple\\.inputmethod\\.Korean\\.2SetKorean$",
+                                    "language": "^ko$"
+                                }
+                            ],
+                            "type": "input_source_unless"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "select_input_source": {
+                                "language": "ko"
+                            }
+                        },
+                        {
+                            "key_code": "f18"
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "select_input_source": {
+                                "language": "ko"
+                            }
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
