@@ -90,7 +90,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "y",
+                                    "key_code": "t",
                                     "modifiers": {
                                         "optional": [
                                             "any"
