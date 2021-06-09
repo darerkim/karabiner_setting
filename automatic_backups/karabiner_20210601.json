@@ -70,12 +70,12 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "modifiers": [
-                                            "any"
-                                        ],
                                         "select_input_source": {
                                             "language": "ko"
-                                        }
+                                        },
+                                        "modifiers": [
+                                            "any"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -1531,7 +1531,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "hyphen"
+                                        "key_code": "keypad_equal_sign"
                                     },
                                     {
                                         "key_code": "period",
@@ -2143,7 +2143,28 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,
