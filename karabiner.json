@@ -903,7 +903,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "z",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1161,7 +1161,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "g",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1184,7 +1184,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "z",
+                                    "key_code": "g",
                                     "modifiers": {
                                         "optional": [
                                             "any"
