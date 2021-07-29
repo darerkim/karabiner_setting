@@ -125,7 +125,7 @@
                         ]
                     },
                     {
-                        "description": "かなキーMode [arrow keys], [u -> delete], [o -> delete_forward], [enter -> exit], [u -> tab]",
+                        "description": "かなキーMode 마우스 커서 이동 키",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -731,6 +731,24 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "lang1Mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "period"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
@@ -972,7 +990,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "z",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1230,7 +1248,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "z",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1262,7 +1280,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "keypad_enter"
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
@@ -1707,7 +1725,7 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "spacebar",
+                                        "key_code": "lang1",
                                         "modifiers": [
                                             "any"
                                         ]
