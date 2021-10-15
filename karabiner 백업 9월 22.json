@@ -1785,326 +1785,12 @@
                         ]
                     },
                     {
-                        "description": "spacebarMode [왼쪽키들을 mousekey 설정]",
+                        "description": "spacebarMode [왼쪽키들을 알파벳 [q-v] -> [y-m] 까지로 설정]",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "e",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": -1536
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": -1536
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "y": 1536
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "x": 1536
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_shift",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "speed_multiplier": 0.5
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "speed_multiplier": 3.0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": -32
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "mouse_key": {
-                                            "vertical_wheel": 32
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "spacebarMode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "option Key [스페이스바를 한손 알파벳 입력키로 전환]",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_option",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "optionMode",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "set_variable": {
-                                            "name": "optionMode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "left_option",
-                                        "modifiers": [
-                                            "any"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "spacebarMode [왼쪽키들을 알파벳 [q-v] -> [y-m] 까지로 설정 {보류}]",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "optionMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2127,7 +1813,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2150,7 +1836,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2173,7 +1859,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2196,7 +1882,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2219,7 +1905,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2242,7 +1928,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2265,7 +1951,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2288,7 +1974,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2311,7 +1997,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2334,7 +2020,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2357,7 +2043,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2380,7 +2066,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2403,7 +2089,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2426,7 +2112,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "optionMode",
+                                        "name": "spacebarMode",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -2442,41 +2128,6 @@
                                 "to": [
                                     {
                                         "key_code": "n"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "kana Key [오른쪽 커맨드키를 일본어키로 설정](비활성화)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_command"
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "numeric_keypad_mode",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "set_variable": {
-                                            "name": "numeric_keypad_mode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "lang1",
-                                        "modifiers": [
-                                            "any"
-                                        ]
                                     }
                                 ],
                                 "type": "basic"
