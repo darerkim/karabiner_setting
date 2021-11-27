@@ -4,6 +4,7 @@
         "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
+    
     "profiles": [
         {
             "complex_modifications": {
@@ -409,29 +410,6 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "lang1Mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
                                     "key_code": "backslash",
                                     "modifiers": {
                                         "optional": [
@@ -442,29 +420,6 @@
                                 "to": [
                                     {
                                         "pointing_button": "button2"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "lang1Mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
                                     }
                                 ],
                                 "type": "basic"
@@ -509,9 +464,7 @@
                                     "key_code": "a",
                                     "modifiers": {
                                         "optional": [
-                                            "left_option",
-                                            "left_control",
-                                            "left_command"
+                                            "any"
                                         ]
                                     }
                                 },
@@ -533,8 +486,8 @@
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -977,32 +930,6 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "tab",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "non_us_backslash",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "lang2Mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
                                     "key_code": "x",
                                     "modifiers": {
                                         "optional": [
@@ -1095,7 +1022,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "6",
+                                    "key_code": "keypad_6",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1104,7 +1031,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "7"
+                                        "key_code": "keypad_7"
                                     }
                                 ],
                                 "type": "basic"
@@ -1150,7 +1077,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "keypad_hyphen"
+                                        "key_code": "hyphen"
                                     }
                                 ],
                                 "type": "basic"
@@ -1494,6 +1421,29 @@
                                     }
                                 ],
                                 "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "lang2Mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
                                     "key_code": "r",
                                     "modifiers": {
                                         "optional": [
@@ -1531,7 +1481,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "keypad_equal_sign"
+                                        "key_code": "hyphen"
                                     }
                                 ],
                                 "type": "basic"
@@ -1831,7 +1781,7 @@
                                     "key_code": "spacebar",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "left_option"
                                         ]
                                     }
                                 },
@@ -2962,27 +2912,6 @@
                                 "to": [
                                     {
                                         "key_code": "f18"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "조건식 키변환에 해당하지 않는 특수한 경우",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "quote",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen"
                                     }
                                 ],
                                 "type": "basic"
